@@ -2,6 +2,9 @@
 
 Web scrapping project for occupational therapy from site (https://www.otaus.com.au/find-an-ot)
 
+#Libraries:
+- phpQuery (https://code.google.com/archive/p/phpquery/)
+
 #Execution:
 - In project folder php_location index.php
 
