@@ -145,49 +145,56 @@ class OTScrapper
 
                 foreach ($content as $con) {
 
-                    if (!is_null($prev_id) && $prev_id === trim(pq($con)->find('div.main-contact-content')->attr('ajax-data'))) continue;
+                    if (!is_null($prev_id) && $prev_id === trim(pq($con)->find('div.org-main-content > div.content__row > div.main-contact-content')->attr('ajax-data')))
+                        continue;
 
-                    $prev_id = trim(pq($con)->find('div.main-contact-content')->attr('ajax-data'));
+                    $prev_id = trim(pq($con)->find('div.org-main-content > div.content__row > div.main-contact-content')->attr('ajax-data'));
 
-                    $arr_firm_data['practice_name'] = $this->sanitize(pq($con)->find('div.main-contact-content > div.title__tag')->html());
-                    $arr_firm_data['contact_name'] = $this->sanitize(pq($con)->find('div.main-contact-content strong[class=name]')->html());
+                    $firm_data['practice_name'] = $this->sanitize(pq($con)->find('div.org-main-content > div.content__row > div.main-contact-content > div.title__tag')->html());
+                    $firm_data['contact_name'] = $this->sanitize(pq($con)->find('div.org-main-content > div.content__row > div.main-contact-content strong[class=name]')->html());
 
-                    $address = pq($con)->find('div.main-contact-content > p:eq(1)')->html();
+                    $address = pq($con)->find('div.org-main-content > div.content__row > div.main-contact-content > p:eq(1)')->html();
                     $address = $this->getAddressSeparately($address);
 
-                    $arr_firm_data = array_replace($arr_firm_data, $address);
+                    $firm_data = array_replace($firm_data, $address);
 
-                    $arr_firm_data['phone'] = $this->sanitize(pq($con)->find('div.main-contact-content a[href^=tel]')->html());
+                    $firm_data['phone'] = $this->sanitize(pq($con)->find('div.org-main-content > div.content__row > div.main-contact-content a[href^=tel]')->html());
 
                     $funding_scheme_area_dom = pq($con)->find('div.org-main-content > div.content__row > div.content__col:eq(1) p')->html();
                     $funding_scheme_area_dom = explode("<br>", $funding_scheme_area_dom);
 
-                    $arr_firm_data['funding_scheme'] = "";
-                    $arr_firm_data['area_of_practices'] = "";
+                    $firm_data['funding_scheme'] = "";
+                    $firm_data['area_of_practices'] = "";
 
                     foreach ($funding_scheme_area_dom as $fsa_dom) {
-                        if (preg_match("/<strong>Funding/", $fsa_dom)) $arr_firm_data['funding_scheme'] = $this->sanitize(preg_replace("/<strong>.*?<\/strong>/", '', $fsa_dom));
-                        if (preg_match("/<strong>Area/", $fsa_dom)) $arr_firm_data['area_of_practices'] = $this->sanitize(preg_replace("/<strong>.*?<\/strong>/", '', $fsa_dom));
+                        if (preg_match("/<strong>Funding/", $fsa_dom))
+                            $firm_data['funding_scheme'] = $this->sanitize(preg_replace("/<strong>.*?<\/strong>/", '', $fsa_dom));
+
+                        if (preg_match("/<strong>Area/", $fsa_dom))
+                            $firm_data['area_of_practices'] = $this->sanitize(preg_replace("/<strong>.*?<\/strong>/", '', $fsa_dom));
                     }
 
-                    $this->saveToCSV($arr_firm_data);
+                    $this->saveToCSV($firm_data);
 
-                    //Other Workplace
                     if (trim(pq($con)->find('div.org-main-content > div.extra__content ')->html()) !== '') {
 
-                        $arr_firm_data['phone'] = $this->sanitize(pq($con)->find('div.org-main-content > div.extra__content a[href^=tel]')->html());
-                        $arr_firm_data['practice_name'] = $this->sanitize(pq($con)->find('div.org-main-content > div.extra__content div.contact-content div.title__tag')->html());
-                        $address = pq($con)->find('div.org-main-content > div.extra__content div.contact-content > p:eq(0)')->html();
-                        $address = $this->getAddressSeparately($address);
+                        $extra_contents_row = pq($con)->find('div.org-main-content > div.extra__content div.content__row');
 
-                        $arr_firm_data = array_replace($arr_firm_data, $address);
-
-                        $arr_firm_data['funding_scheme'] = '';
-                        $arr_firm_data['area_of_practices'] = '';
-
-                        $this->saveToCSV($arr_firm_data);
+                        if (isset($extra_contents_row) && count($extra_contents_row) > 0) {
+                            $counter = count($extra_contents_row);
+                            for ($i = 0; $i < $counter; $i++) {
+                                $eq = ' div.content__row:eq(' . $i . ')';
+                                $firm_data['phone'] = $this->sanitize(pq($con)->find('div.org-main-content > div.extra__content ' . $eq . ' a[href^=tel]')->html());
+                                $firm_data['practice_name'] = $this->sanitize(pq($con)->find('div.org-main-content > div.extra__content ' . $eq . ' div.contact-content div.title__tag')->html());
+                                $address = pq($con)->find('div.org-main-content > div.extra__content ' . $eq . ' div.contact-content > p:eq(0)')->html();
+                                $address = $this->getAddressSeparately($address);
+                                $firm_data = array_replace($firm_data, $address);
+                                $firm_data['funding_scheme'] = '';
+                                $firm_data['area_of_practices'] = '';
+                                $this->saveToCSV($firm_data);
+                            }
+                        }
                     }
-
                     unset($arr_firm_data);
                 }
 
