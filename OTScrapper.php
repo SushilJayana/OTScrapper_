@@ -31,7 +31,6 @@ class OTScrapper
     public function scrap()
     {
         try {
-
             $arr_area_of_practices = $this->getAreaOfPractices();
 
             if (is_null($arr_area_of_practices)) return false;
@@ -44,7 +43,7 @@ class OTScrapper
                 $this->member_search_post_fields['AreaOfPracticeId'] = $aop;
                 $member_search_response = $this->getMemberSearchJson($this->member_search_post_fields);
 
-                echo 'Processing member search details ', $this->getCurrentDateTime(), "\n";
+//                echo 'Processing member search details ', $this->getCurrentDateTime(), "\n";
                 logInfo('Processing member search details ' . $this->getCurrentDateTime());
 
                 if (is_null($this->arr_prev_members_ids)) {
@@ -126,7 +125,7 @@ class OTScrapper
             $to = $this->request_limit;
             $arr_count = count($member_ids);
 
-            echo 'Processing contact details ', $this->getCurrentDateTime(), "\n";
+//            echo 'Processing contact details ', $this->getCurrentDateTime(), "\n";
             logInfo('Processing contact details ' . $this->getCurrentDateTime());
 
             while ($arr_count > 0) {
