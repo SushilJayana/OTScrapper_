@@ -18,7 +18,7 @@ class OTScrapper
 
     // ServiceType = 2  (Face to Face)
     private $member_search_post_fields = array('Distance' => '0', 'ServiceType' => '2', 'AreaOfPracticeId' => '',
-        'Name' => 'Mat', 'State' => '0', 'Location' => '', 'FundingSchemeId' => '', 'PracticeName' => '');
+        'Name' => '', 'State' => '0', 'Location' => '', 'FundingSchemeId' => '', 'PracticeName' => '');
 
     private $arr_firm_data_header = array('Practice Name', 'Contact Name', 'Address Street', 'Address City',
         'Address State', 'Address PostCode', 'Address Country', 'Phone', 'Funding Scheme', 'Area(s) of Practice');

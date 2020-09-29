@@ -1,0 +1,115 @@
+2020-09-29 14:27:00 INFO Started at : 2020-09-29 14:27:00
+2020-09-29 14:27:01 INFO Response :200 ,URL :https://www.otaus.com.au/find-an-ot,TYPE :get
+2020-09-29 14:27:02 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:27:02 INFO Processing member search details 2020-09-29 14:27:02
+2020-09-29 14:27:02 INFO Processing contact details 2020-09-29 14:27:02
+2020-09-29 14:27:17 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:27:17 INFO Processing member search details 2020-09-29 14:27:17
+2020-09-29 14:27:17 INFO Processing contact details 2020-09-29 14:27:17
+2020-09-29 14:27:19 INFO Response :200 ,URL :https://www.otaus.com.au/search/getcontacts?ids=1eb8e1a3-39f2-e911-a2c3-9b7af2531dd2&ids=a392de2c-60fb-e911-a2c3-9b7af2531dd2&ids=c0ed8e0d-6b91-e911-a2c3-9b7af2531dd2&ids=290467d2-8eae-e911-a2c3-9b7af2531dd2,TYPE :get
+2020-09-29 14:27:52 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:27:52 INFO Processing member search details 2020-09-29 14:27:52
+2020-09-29 14:27:52 INFO Processing contact details 2020-09-29 14:27:52
+2020-09-29 14:27:54 INFO Response :200 ,URL :https://www.otaus.com.au/search/getcontacts?ids=3a0fa490-4b1a-ea11-9403-005056be13b5&ids=3f7801a3-e8a2-e911-a2c3-9b7af2531dd2,TYPE :get
+2020-09-29 14:28:25 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:28:25 INFO Processing member search details 2020-09-29 14:28:25
+2020-09-29 14:28:25 INFO Processing contact details 2020-09-29 14:28:25
+2020-09-29 14:28:26 INFO Response :200 ,URL :https://www.otaus.com.au/search/getcontacts?ids=181399c7-c58d-ea11-9434-005056be13b5,TYPE :get
+2020-09-29 14:28:54 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:28:54 INFO Processing member search details 2020-09-29 14:28:54
+2020-09-29 14:28:54 INFO Processing contact details 2020-09-29 14:28:54
+2020-09-29 14:29:05 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:29:05 INFO Processing member search details 2020-09-29 14:29:05
+2020-09-29 14:29:05 INFO Processing contact details 2020-09-29 14:29:05
+2020-09-29 14:29:21 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:29:21 INFO Processing member search details 2020-09-29 14:29:21
+2020-09-29 14:29:21 INFO Processing contact details 2020-09-29 14:29:21
+2020-09-29 14:29:36 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:29:36 INFO Processing member search details 2020-09-29 14:29:36
+2020-09-29 14:29:36 INFO Processing contact details 2020-09-29 14:29:36
+2020-09-29 14:29:47 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:29:47 INFO Processing member search details 2020-09-29 14:29:47
+2020-09-29 14:29:47 INFO Processing contact details 2020-09-29 14:29:47
+2020-09-29 14:29:48 INFO Response :200 ,URL :https://www.otaus.com.au/search/getcontacts?ids=ec9ff5df-0b6a-4fea-a797-aca9ce06f10b,TYPE :get
+2020-09-29 14:30:19 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:30:19 INFO Processing member search details 2020-09-29 14:30:19
+2020-09-29 14:30:19 INFO Processing contact details 2020-09-29 14:30:19
+2020-09-29 14:30:40 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:30:40 INFO Processing member search details 2020-09-29 14:30:40
+2020-09-29 14:30:40 INFO Processing contact details 2020-09-29 14:30:40
+2020-09-29 14:30:41 INFO Response :200 ,URL :https://www.otaus.com.au/search/getcontacts?ids=1a7eef80-c14a-4866-9648-8d735f82ee01,TYPE :get
+2020-09-29 14:31:16 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:31:16 INFO Processing member search details 2020-09-29 14:31:16
+2020-09-29 14:31:16 INFO Processing contact details 2020-09-29 14:31:16
+2020-09-29 14:31:17 INFO Response :200 ,URL :https://www.otaus.com.au/search/getcontacts?ids=b5bbdc55-40eb-ea11-9434-005056be13b5,TYPE :get
+2020-09-29 14:31:52 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:31:52 INFO Processing member search details 2020-09-29 14:31:52
+2020-09-29 14:31:52 INFO Processing contact details 2020-09-29 14:31:52
+2020-09-29 14:32:11 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:32:11 INFO Processing member search details 2020-09-29 14:32:11
+2020-09-29 14:32:11 INFO Processing contact details 2020-09-29 14:32:11
+2020-09-29 14:32:27 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:32:27 INFO Processing member search details 2020-09-29 14:32:27
+2020-09-29 14:32:27 INFO Processing contact details 2020-09-29 14:32:27
+2020-09-29 14:32:28 INFO Response :200 ,URL :https://www.otaus.com.au/search/getcontacts?ids=85b60541-3e0d-4956-aa3b-64756ca46b8c,TYPE :get
+2020-09-29 14:32:51 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:32:51 INFO Processing member search details 2020-09-29 14:32:51
+2020-09-29 14:32:51 INFO Processing contact details 2020-09-29 14:32:51
+2020-09-29 14:32:52 INFO Response :200 ,URL :https://www.otaus.com.au/search/getcontacts?ids=a1353c73-d26c-ea11-9404-005056be13b5&ids=ee676afc-2e16-ea11-9403-005056be13b5&ids=c18890d5-4c9e-ea11-9434-005056be13b5,TYPE :get
+2020-09-29 14:33:27 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:33:27 INFO Processing member search details 2020-09-29 14:33:27
+2020-09-29 14:33:27 INFO Processing contact details 2020-09-29 14:33:27
+2020-09-29 14:33:41 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:33:41 INFO Processing member search details 2020-09-29 14:33:41
+2020-09-29 14:33:41 INFO Processing contact details 2020-09-29 14:33:41
+2020-09-29 14:33:43 INFO Response :200 ,URL :https://www.otaus.com.au/search/getcontacts?ids=05b2caa3-849c-e911-a2c3-9b7af2531dd2&ids=12b2caa3-849c-e911-a2c3-9b7af2531dd2,TYPE :get
+2020-09-29 14:34:15 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:34:15 INFO Processing member search details 2020-09-29 14:34:15
+2020-09-29 14:34:15 INFO Processing contact details 2020-09-29 14:34:15
+2020-09-29 14:34:30 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:34:30 INFO Processing member search details 2020-09-29 14:34:30
+2020-09-29 14:34:30 INFO Processing contact details 2020-09-29 14:34:30
+2020-09-29 14:34:51 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:34:51 INFO Processing member search details 2020-09-29 14:34:51
+2020-09-29 14:34:51 INFO Processing contact details 2020-09-29 14:34:51
+2020-09-29 14:35:07 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:35:07 INFO Processing member search details 2020-09-29 14:35:07
+2020-09-29 14:35:07 INFO Processing contact details 2020-09-29 14:35:07
+2020-09-29 14:35:08 INFO Response :200 ,URL :https://www.otaus.com.au/search/getcontacts?ids=5a6df03e-a99f-e911-a2c3-9b7af2531dd2&ids=d7478d26-1077-40ea-98a3-a863bd5802c1,TYPE :get
+2020-09-29 14:35:38 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:35:38 INFO Processing member search details 2020-09-29 14:35:38
+2020-09-29 14:35:38 INFO Processing contact details 2020-09-29 14:35:38
+2020-09-29 14:35:51 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:35:51 INFO Processing member search details 2020-09-29 14:35:51
+2020-09-29 14:35:51 INFO Processing contact details 2020-09-29 14:35:51
+2020-09-29 14:35:52 INFO Response :200 ,URL :https://www.otaus.com.au/search/getcontacts?ids=5bf1c746-576d-4c72-85b4-a51c0ea44268&ids=0e67abb3-c789-e911-a2c3-9b7af2531dd2&ids=399c334d-81ee-45d4-b8bc-7aab1067aeb7&ids=2ca59faf-a099-e911-a2c3-9b7af2531dd2,TYPE :get
+2020-09-29 14:36:21 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:36:21 INFO Processing member search details 2020-09-29 14:36:21
+2020-09-29 14:36:21 INFO Processing contact details 2020-09-29 14:36:21
+2020-09-29 14:36:33 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:36:33 INFO Processing member search details 2020-09-29 14:36:33
+2020-09-29 14:36:33 INFO Processing contact details 2020-09-29 14:36:33
+2020-09-29 14:36:53 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:36:53 INFO Processing member search details 2020-09-29 14:36:53
+2020-09-29 14:36:53 INFO Processing contact details 2020-09-29 14:36:53
+2020-09-29 14:37:07 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:37:07 INFO Processing member search details 2020-09-29 14:37:07
+2020-09-29 14:37:07 INFO Processing contact details 2020-09-29 14:37:07
+2020-09-29 14:37:27 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:37:27 INFO Processing member search details 2020-09-29 14:37:27
+2020-09-29 14:37:27 INFO Processing contact details 2020-09-29 14:37:27
+2020-09-29 14:37:38 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:37:38 INFO Processing member search details 2020-09-29 14:37:38
+2020-09-29 14:37:38 INFO Processing contact details 2020-09-29 14:37:38
+2020-09-29 14:37:59 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:37:59 INFO Processing member search details 2020-09-29 14:37:59
+2020-09-29 14:37:59 INFO Processing contact details 2020-09-29 14:37:59
+2020-09-29 14:38:00 INFO Response :200 ,URL :https://www.otaus.com.au/search/getcontacts?ids=83378705-c072-4c7c-835b-d87046d06d90,TYPE :get
+2020-09-29 14:38:32 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:38:32 INFO Processing member search details 2020-09-29 14:38:32
+2020-09-29 14:38:32 INFO Processing contact details 2020-09-29 14:38:32
+2020-09-29 14:38:33 INFO Response :200 ,URL :https://www.otaus.com.au/search/getcontacts?ids=99e7b338-fd9b-e911-a2c3-9b7af2531dd2,TYPE :get
+2020-09-29 14:38:59 INFO Response :200 ,URL :https://www.otaus.com.au/search/membersearchdistance,TYPE :post
+2020-09-29 14:38:59 INFO Processing member search details 2020-09-29 14:38:59
+2020-09-29 14:38:59 INFO Processing contact details 2020-09-29 14:38:59
+2020-09-29 14:39:17 INFO End at : 2020-09-29 14:39:17
