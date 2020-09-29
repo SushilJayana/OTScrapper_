@@ -214,9 +214,10 @@ class OTScrapper
         $arr_address['street'] = isset($address[0]) ? $this->sanitize($address[0]) : '';
 
         $city_state_postcode = isset($address[1]) ? explode(',', $this->sanitize($address[1])) : null;
-        $arr_address['city'] = (!is_null($city_state_postcode)) ? $this->sanitize($city_state_postcode[0]) : '';
-        $arr_address['state'] = (!is_null($city_state_postcode)) ? $this->sanitize($city_state_postcode[1]) : '';
-        $arr_address['post_code'] = (!is_null($city_state_postcode)) ? $this->sanitize($city_state_postcode[2]) : '';
+
+        $arr_address['city'] = (!is_null($city_state_postcode) && isset($city_state_postcode[0])) ? $this->sanitize($city_state_postcode[0]) : '';
+        $arr_address['state'] = (!is_null($city_state_postcode) && isset($city_state_postcode[1])) ? $this->sanitize($city_state_postcode[1]) : '';
+        $arr_address['post_code'] = (!is_null($city_state_postcode) && isset($city_state_postcode[2])) ? $this->sanitize($city_state_postcode[2]) : '';
 
         $arr_address['country'] = isset($address[2]) ? $this->sanitize($address[2]) : '';
 
