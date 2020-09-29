@@ -218,12 +218,26 @@ class OTScrapper
         $address = explode("<br>", $address);
 
         $arr_address['street'] = isset($address[0]) ? $this->sanitize($address[0]) : '';
-
         $city_state_postcode = isset($address[1]) ? explode(',', $this->sanitize($address[1])) : null;
 
-        $arr_address['city'] = (!is_null($city_state_postcode) && isset($city_state_postcode[0])) ? $this->sanitize($city_state_postcode[0]) : '';
-        $arr_address['state'] = (!is_null($city_state_postcode) && isset($city_state_postcode[1])) ? $this->sanitize($city_state_postcode[1]) : '';
-        $arr_address['post_code'] = (!is_null($city_state_postcode) && isset($city_state_postcode[2])) ? $this->sanitize($city_state_postcode[2]) : '';
+        $state = '';
+        $post_code = '';
+
+        if (!is_null($city_state_postcode)) {
+            foreach ($city_state_postcode as $key => $value) {
+                if (preg_match("/(^[A-Z]{2}$)/", trim($value)) || preg_match("/(^[A-Z]{3}$)/", trim($value))) {
+                    $state = $this->sanitize($value);
+                    unset($city_state_postcode[$key]);
+                }
+                if (preg_match("/(^[0-9]+$)/", trim($value))) {
+                    $post_code = $this->sanitize($value);
+                    unset($city_state_postcode[$key]);
+                }
+            }
+        }
+        $arr_address['city'] = (!is_null($city_state_postcode)) ? rtrim($this->sanitize(implode(',', $city_state_postcode)), ',') : '';
+        $arr_address['state'] = $state;
+        $arr_address['post_code'] = $post_code;
 
         $arr_address['country'] = isset($address[2]) ? $this->sanitize($address[2]) : '';
 
